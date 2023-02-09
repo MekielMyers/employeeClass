@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #from{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 43%;
+        width: 200px;
+    }
+    #empDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 43%;
+        width: 300px;
+    }
+</style>
+<body>
+    <form id="from">
+        <legend>Employee Login</legend>
+        <label>First Name</label>
+        <input type="text" id="fname"><br><br>
+        <label>Last Name</label>
+        <input type="text" id="lname"><br><br>
+        <label>Job Title</label>
+        <input type="text" id="job_title"><br><br>
+        <label>Department</label>
+        <input type="text" id="dept"><br><br>
+        <label>Salary</label>
+        <input type="number" id="salary"><br><br>
+        <label>Years Served</label>
+        <input type="number" id="years"><br><br>
+        <button onclick="newEmployee(event)">Display Employee Info</button><br><br>
+    </form>
+    <div id="empDiv"></div>
+    <script src="script.js"></script>
+</body>
+</html>
